@@ -360,7 +360,7 @@
    */
   var support = {};
 
-  (function() {
+  (function(x) {
     var object = { '0': 1, 'length': 1 };
 
     /**
@@ -376,7 +376,7 @@
      * @type boolean
      */
     support.spliceObjects = (splice.call(object, 0, 1), !object[0]);
-  }(1));
+  }(0, 0));
 
   /**
    * By default, the template delimiters used by Lo-Dash are similar to those in
